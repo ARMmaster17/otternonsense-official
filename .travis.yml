@@ -1,4 +1,5 @@
 language: php
+install: bower
 script: build/test/test.sh
 deployment: build/deploy/aws.sh
 git:
