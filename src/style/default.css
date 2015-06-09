@@ -1,3 +1,10 @@
 p {
 
 }
+
+#sidebar {
+  float: right;
+  position: fixed;
+  margin: 20px;
+  width: 50px;
+}
