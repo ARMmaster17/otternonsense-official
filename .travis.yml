@@ -5,3 +5,6 @@ git:
   submodules: false
 notifications:
   email: false
+branches:
+  only:
+    - master
