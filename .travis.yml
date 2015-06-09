@@ -1,6 +1,6 @@
 language: php
-script: test.sh
-deployment: deploy.sh
+script: build/test/test.sh
+deployment: build/deploy/aws.sh
 git:
   submodules: false
 notifications:
