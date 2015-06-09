@@ -1,0 +1,7 @@
+language: php
+script: test.sh
+deployment: deploy.sh
+git:
+  submodules: false
+notifications:
+  email: false
