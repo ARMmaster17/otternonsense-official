@@ -66,7 +66,8 @@
     <div class="row">
       <div class="col-sm-12">
         <hr />
-        <p>Copyright 2015 Otter Nonsense Interactive - CI build: TRAVISCIBUILDNUMBER</p>
+        <?php require_once "/src/php/version.php"; ?>
+        <p>Copyright 2015 Otter Nonsense Interactive - CI build: <?php echo $version; ?></p>
       </div>
     </div>
   </body>
