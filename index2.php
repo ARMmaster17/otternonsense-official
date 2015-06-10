@@ -1,14 +1,18 @@
 <html>
-  <header>
+  <head>
     <title>Otter Nonsense Interactive - Official Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/style/default.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  </header>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/bootstrap.min.js"></script>
+    <script src="src/js/xml.js"></script>
+  </head>
   <body>
+    <header>
+
+    </header>
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -43,7 +47,6 @@
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
       </div>
       <div class="col-sm-4">
-        <script type="text/javascript" src="./src/js/xml.js"></script>
         <h3>Live feed</h3>
         <h5><a href="./feed.xml" class="feed">subscribe to our feed</a></h5>
         <div class="rss" id="chan">
