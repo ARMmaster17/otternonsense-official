@@ -7,7 +7,7 @@ notifications:
     - wordman05@gmail.com
     - nickpowers43@gmail.com
     on_success: change
-    on_failure: always
+    on_failure: change
 branches:
   only:
   - master
