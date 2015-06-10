@@ -31,7 +31,7 @@ function getRSS()
                 }
             }
             else
-                //alert("Error code " + xhr.status + " received: " + xhr.statusText);
+                alert("Error code " + xhr.status + " received: " + xhr.statusText + " while trying to fetch the file from https://s3.amazonaws.com/oni-us-east");
         }
     }
 
