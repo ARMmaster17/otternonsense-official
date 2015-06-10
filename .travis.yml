@@ -28,7 +28,7 @@ script:
   - cp ./index2.php ./wb_deploy/
   - cp ./.htaccess ./wb_deploy/
   - cp ./.bowerrc ./wb_deploy/
-  - cp ./src ./wb_deploy/
+  - cp ./src/ ./wb_deploy/
   - ls
 deploy:
 - provider: s3
