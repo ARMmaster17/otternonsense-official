@@ -13,7 +13,8 @@
     <!--End Content-->
     <footer>
       <hr />
-      <p>Copyright 2015 Otter Nonsense Interactive - CI build: TRAVISCIBUILDNUMBER</p>
+        <?php require_once "/src/php/version.php"; ?>
+        <p>Copyright 2015 Otter Nonsense Interactive - CI build: <?php echo $version; ?></p>
     </footer>
   </body>
 </html>
