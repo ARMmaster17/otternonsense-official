@@ -1,5 +1,10 @@
 language: php
-install: bower
+before-install:
+  - sudo apt-get install nodejs
+install:
+  - npm install -g bower
+  - bower install bootstrap
+  - bower install jquery
 script: build/test/test.sh
 deployment: build/deploy/aws.sh
 git:
