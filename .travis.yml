@@ -3,7 +3,8 @@ install:
 - npm install -g bower
 - bower install bootstrap
 script:
-  - phpunit
+#  - phpunit
+  - echo 'Testing not configured!'
 git:
   submodules: false
 addons:
