@@ -9,7 +9,7 @@ function getRSS()
         alert("your browser does not support AJAX");
 
     /*B*/
-    xhr.open("GET","http://armmaster17.github.io/otternonsense-official/feed.xml",true);
+    xhr.open("GET","https://s3.amazonaws.com/oni-us-east/feed.xml",true);
 
     /*C*/
     xhr.setRequestHeader("Cache-Control", "no-cache");
