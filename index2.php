@@ -3,11 +3,11 @@
     <title>Otter Nonsense Interactive - Official Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="src/style/default.css">
-    <script src="src/bower/jquery/dist/jquery.min.js"></script>
-    <script src="src/bower/bootstrap/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="src/bower/bootstrap/dist/css/bootstrap.min.css">
-    <script src="src/js/xml.js"></script>
+    <link rel="stylesheet" href="/src/style/default.css">
+    <script src="/src/bower/jquery/dist/jquery.min.js"></script>
+    <script src="/src/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/src/bower/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/src/js/xml.js"></script>
   </head>
   <body>
     <header>
@@ -21,7 +21,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
          </button>
-         <a class="navbar-brand" href="index.html">Otter Nonsense Interactive</a>
+         <a class="navbar-brand" href="/index.html">Otter Nonsense Interactive</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
          <ul class="nav navbar-nav navbar-right">
@@ -48,7 +48,7 @@
       </div>
       <div class="col-sm-4">
         <h3>Live feed</h3>
-        <h5><a href="feed.xml" class="feed">subscribe to our feed</a></h5>
+        <h5><a href="/feed.xml" class="feed">subscribe to our feed</a></h5>
         <div class="rss" id="chan">
           <h4><div class="rss" id="chan_title"></div></h4>
           <div class="rss" id="chan_link"></div>
