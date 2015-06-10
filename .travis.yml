@@ -22,6 +22,7 @@ install:
 script:
 #  - phpunit
   - echo 'Testing not configured!'
+  - sed 's/TRAVISCIBUILDNUMBER/'$TRAVIS_BUILD_NUMBER'/' index2.html
   # Prepare for deploy
   #- mkdir wb_deploy
   #- cp ./index.php ./wb_deploy/
