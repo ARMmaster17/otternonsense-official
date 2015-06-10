@@ -1,5 +1,5 @@
 {
-  "directory": "src/js/",
+  "directory": "src/bower/",
   "analytics": false,
   "timeout": 120000
 }
