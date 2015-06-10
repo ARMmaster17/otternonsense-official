@@ -23,19 +23,19 @@ script:
 #  - phpunit
   - echo 'Testing not configured!'
   # Prepare for deploy
-  - mkdir wb_deploy
-  - cp ./index.php ./wb_deploy/
-  - cp ./index2.php ./wb_deploy/
-  - cp ./.htaccess ./wb_deploy/
-  - cp ./.bowerrc ./wb_deploy/
-  - cp ./src ./wb_deploy
-  - ls
+  #- mkdir wb_deploy
+  #- cp ./index.php ./wb_deploy/
+  #- cp ./index2.php ./wb_deploy/
+  #- cp ./.htaccess ./wb_deploy/
+  #- cp ./.bowerrc ./wb_deploy/
+  #- cp -avr src wb_deploy
+  #- ls
 deploy:
 - provider: s3
   access_key_id: AKIAIZOP3PL7XL32RQWQ
   secret_access_key: &1
     secure: CUsV0bZgyM/J8AdTz6t5kcRbf+uKZoXoq6HdIJ6JhhuOr9IWSj16M9rrU1wCipRmpq+dLsHFpojEcx0IMrcoP6VW0GIxRvIzn/a42J4iDu9LUEYll5tD4yqaOQcsLQIbuxngOhnlvxiXjPdtef0i3ko9O9QFoYXpOBL70zAxsso=
-  local_dir: wb_deploy
+  #local_dir: wb_deploy
   skip_cleanup: true
   on: &2
     repo: ARMmaster17/otternonsense-official
