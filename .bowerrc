@@ -1,0 +1,5 @@
+{
+  "directory": "src/js/",
+  "analytics": false,
+  "timeout": 120000
+}
