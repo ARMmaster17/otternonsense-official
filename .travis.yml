@@ -14,21 +14,34 @@ branches:
 addons:
   apt:
     packages:
-      - nodejs
-      - git
+    - nodejs
+    - git
 install:
 - npm install -g bower
 - bower install bootstrap
 script:
-#  - phpunit
-  - echo 'Testing not configured!'
-  - sed 's/TRAVISCIBUILDNUMBER/'$TRAVIS_BUILD_NUMBER'/' index2.htm > index2.html
-  - sed 's/TRAVISCIBUILDNUMBER/'$TRAVIS_BUILD_NUMBER'/' index.htm > index.html
-  # Prepare for deploy
-  #- mkdir wb_deploy
-  #- cp ./index.php ./wb_deploy/
-  #- cp ./index2.php ./wb_deploy/
-  #- cp ./.htaccess ./wb_deploy/
-  #- cp ./.bowerrc ./wb_deploy/
-  #- cp -avr src wb_deploy
-  #- ls
+- echo 'Testing not configured!'
+- sed 's/TRAVISCIBUILDNUMBER/'$TRAVIS_BUILD_NUMBER'/' index2.html > index3.html
+deploy:
+- provider: s3
+  access_key_id: AKIAIZOP3PL7XL32RQWQ
+  secret_access_key: nothing
+  local_dir: dpl_cd_upload
+  skip_cleanup: true
+  on: &1
+    repo: ARMmaster17/otternonsense-official
+  bucket: oni-us-east
+  upload_dir: latest
+- provider: codedeploy
+  access_key_id: AKIAIZOP3PL7XL32RQWQ
+  secret_access_key: *1
+    secure: CUsV0bZgyM/J8AdTz6t5kcRbf+uKZoXoq6HdIJ6JhhuOr9IWSj16M9rrU1wCipRmpq+dLsHFpojEcx0IMrcoP6VW0GIxRvIzn/a42J4iDu9LUEYll5tD4yqaOQcsLQIbuxngOhnlvxiXjPdtef0i3ko9O9QFoYXpOBL70zAxsso=
+  bucket: oni-us-east
+  key: latest/website.zip
+  bundle_type: zip
+  application: otternonsense-official
+  deployment_group: DeploymentGroup
+  on: *1
+before_deploy:
+- mkdir -p dpl_cd_upload
+- mv website.zip dpl_cd_upload/website.zip
