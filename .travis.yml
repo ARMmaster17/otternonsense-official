@@ -22,7 +22,7 @@ install:
 script:
 #  - phpunit
   - echo 'Testing not configured!'
-before-deploy:
+  # Prepare for deploy
   - mkdir wb_deploy
   - cp ./index.php ./wb_deploy/
   - cp ./index2.php ./wb_deploy/
