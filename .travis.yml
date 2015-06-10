@@ -1,7 +1,7 @@
 language: php
 install:
-- sudo apt-get install nodejs
-- sudo apt-get install git
+- apt-get install nodejs
+- apt-get install git
 - npm install -g bower
 - bower install bootstrap
 script:
