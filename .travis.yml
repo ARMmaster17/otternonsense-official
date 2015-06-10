@@ -31,14 +31,3 @@ script:
   #- cp ./.bowerrc ./wb_deploy/
   #- cp -avr src wb_deploy
   #- ls
-deploy:
-  provider: codedeploy
-  access_key_id: AKIAIZOP3PL7XL32RQWQ
-  secret_access_key: *1
-    secure: CUsV0bZgyM/J8AdTz6t5kcRbf+uKZoXoq6HdIJ6JhhuOr9IWSj16M9rrU1wCipRmpq+dLsHFpojEcx0IMrcoP6VW0GIxRvIzn/a42J4iDu9LUEYll5tD4yqaOQcsLQIbuxngOhnlvxiXjPdtef0i3ko9O9QFoYXpOBL70zAxsso=
-  bucket: oni-us-east
-  key: latest/Website.zip
-  application: otternonsense-official
-  deployment_group: DeploymentGroup
-  on: &2
-    repo: ARMmaster17/otternonsense-official
