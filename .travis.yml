@@ -1,13 +1,15 @@
 language: php
 install:
-- apt-get install nodejs
-- apt-get install git
 - npm install -g bower
 - bower install bootstrap
 script:
   - phpunit
 git:
   submodules: false
+addons:
+  apt:
+    - nodejs
+    - git
 notifications:
   email:
     recipients:
