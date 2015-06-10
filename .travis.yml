@@ -1,17 +1,6 @@
 language: php
-install:
-- npm install -g bower
-- bower install bootstrap
-script:
-#  - phpunit
-  - echo 'Testing not configured!'
 git:
   submodules: false
-addons:
-  apt:
-    packages:
-      - nodejs
-      - git
 notifications:
   email:
     recipients:
@@ -22,6 +11,25 @@ notifications:
 branches:
   only:
   - master
+addons:
+  apt:
+    packages:
+      - nodejs
+      - git
+install:
+- npm install -g bower
+- bower install bootstrap
+script:
+#  - phpunit
+  - echo 'Testing not configured!'
+before-deploy:
+  - mkdir wb_deploy
+  - cp ./index.php ./wb_deploy/
+  - cp ./index2.php ./wb_deploy/
+  - cp ./.htaccess ./wb_deploy/
+  - cp ./.bowerrc ./wb_deploy/
+  - cp ./src ./wb_deploy/
+  - ls
 deploy:
 - provider: s3
   access_key_id: AKIAIZOP3PL7XL32RQWQ
@@ -42,11 +50,3 @@ deploy:
 #  application: otternonsense-official
 #  deployment_group: DeploymentGroup
 #  on: *2
-before-deploy:
-  - mkdir wb_deploy
-  - cp ./index.php ./wb_deploy/
-  - cp ./index2.php ./wb_deploy/
-  - cp ./.htaccess ./wb_deploy/
-  - cp ./.bowerrc ./wb_deploy/
-  - cp ./src ./wb_deploy/
-  - ls
