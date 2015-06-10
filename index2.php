@@ -3,10 +3,10 @@
     <title>Otter Nonsense Interactive - Official Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/style/default.css">
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/bootstrap.min.js"></script>
+    <script src="src/bower/jquery/dist/jquery.min.js"></script>
+    <script src="src/bower/bootstrap/dist/bootstrap.min.js"></script>
+    <script src="src/bower/bootstrap/dist/bootstrap.min.css"></script>
     <script src="src/js/xml.js"></script>
   </head>
   <body>
