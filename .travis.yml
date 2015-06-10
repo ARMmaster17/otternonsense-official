@@ -20,10 +20,12 @@ install:
 - npm install -g bower
 - bower install bootstrap
 script:
-- echo 'Testing not configured!'
-  - sed 's/TRAVISCIBUILDNUMBER/'$TRAVIS_BUILD_NUMBER'/' index2.htm > index2.html
-  - sed 's/TRAVISCIBUILDNUMBER/'$TRAVIS_BUILD_NUMBER'/' index.htm > index.html
+  - echo 'Testing not configured!'
+  # TODO: needs to be replaced with global PHP include file
+  #- sed 's/TRAVISCIBUILDNUMBER/'$TRAVIS_BUILD_NUMBER'/' index2.htm > index2.html
+  #- sed 's/TRAVISCIBUILDNUMBER/'$TRAVIS_BUILD_NUMBER'/' index.htm > index.html
 deploy:
   provider: heroku
+  buildpack: php
   api_key: "9951e24c-b489-48fe-8a60-b325e8d850dd"
   app: enigmatic-thicket-1799
