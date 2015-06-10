@@ -8,8 +8,9 @@ git:
   submodules: false
 addons:
   apt:
-    - nodejs
-    - git
+    packages:
+      - nodejs
+      - git
 notifications:
   email:
     recipients:
