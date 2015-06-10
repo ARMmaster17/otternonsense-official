@@ -27,7 +27,7 @@ deploy:
   access_key_id: AKIAIZOP3PL7XL32RQWQ
   secret_access_key: &1
     secure: CUsV0bZgyM/J8AdTz6t5kcRbf+uKZoXoq6HdIJ6JhhuOr9IWSj16M9rrU1wCipRmpq+dLsHFpojEcx0IMrcoP6VW0GIxRvIzn/a42J4iDu9LUEYll5tD4yqaOQcsLQIbuxngOhnlvxiXjPdtef0i3ko9O9QFoYXpOBL70zAxsso=
-  local_dir: dpl_cd_upload
+  local_dir: wb_deploy
   skip_cleanup: true
   on: &2
     repo: ARMmaster17/otternonsense-official
@@ -42,3 +42,10 @@ deploy:
 #  application: otternonsense-official
 #  deployment_group: DeploymentGroup
 #  on: *2
+before-deploy:
+  - mkdir wb_deploy
+  - mv ./index.php ./wb_deploy/
+  - mv ./index2.php ./wb_deploy/
+  - mv ./.htaccess ./wb_deploy/
+  - mv ./.bowerrc ./wb_deploy/
+  - mv ./src ./wb_deploy/
