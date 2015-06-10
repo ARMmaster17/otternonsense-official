@@ -23,6 +23,6 @@ script:
 - echo 'Testing not configured!'
   - sed 's/TRAVISCIBUILDNUMBER/'$TRAVIS_BUILD_NUMBER'/' index2.htm > index2.html
   - sed 's/TRAVISCIBUILDNUMBER/'$TRAVIS_BUILD_NUMBER'/' index.htm > index.html
-on_success:
-  - chmod +x build/deploy/aws.sh
-  - build/deploy/aws.sh
+deploy:
+  provider: heroku
+  api_key: "9951e24c-b489-48fe-8a60-b325e8d850dd"
