@@ -6,7 +6,6 @@ install:
 - npm install -g bower
 - bower install bootstrap
 script: build/test/test.sh
-after_success: build/deploy/aws.sh
 git:
   submodules: false
 notifications:
