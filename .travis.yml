@@ -21,11 +21,13 @@ install:
 - bower install bootstrap
 script:
 - echo 'Testing not configured!'
-- sed 's/TRAVISCIBUILDNUMBER/'$TRAVIS_BUILD_NUMBER'/' index2.html > index3.html
+  - sed 's/TRAVISCIBUILDNUMBER/'$TRAVIS_BUILD_NUMBER'/' index2.htm > index2.html
+  - sed 's/TRAVISCIBUILDNUMBER/'$TRAVIS_BUILD_NUMBER'/' index.htm > index.html
 deploy:
 - provider: s3
   access_key_id: AKIAIZOP3PL7XL32RQWQ
-  secret_access_key: nothing
+  secret_access_key: *1
+    secure: CUsV0bZgyM/J8AdTz6t5kcRbf+uKZoXoq6HdIJ6JhhuOr9IWSj16M9rrU1wCipRmpq+dLsHFpojEcx0IMrcoP6VW0GIxRvIzn/a42J4iDu9LUEYll5tD4yqaOQcsLQIbuxngOhnlvxiXjPdtef0i3ko9O9QFoYXpOBL70zAxsso=
   local_dir: dpl_cd_upload
   skip_cleanup: true
   on: &1
