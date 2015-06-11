@@ -13,8 +13,8 @@
     <!--End Content-->
     <footer>
       <hr />
-        <?php require_once 'http://enigmatic-thicket-1799.herokuapp.com/src/php/version.php'; ?>
-        <p>Copyright 2015 Otter Nonsense Interactive - CI build: <?php echo $version; ?></p>
+        <?php include 'lib-version.php'; ?>
+        <p>Copyright 2015 Otter Nonsense Interactive - CI build: <?php echo getVersion(); ?></p>
     </footer>
   </body>
 </html>
