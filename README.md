@@ -5,6 +5,9 @@ For a more readable, paginated version, visit <https://github.com/ARMmaster17/ot
 ## Site overview
 The entire website is programmed in Ruby. The web stack is provided by Sinatra. Minify-ing of the HTML templates is done with the Slim gem. The structure of the site is in the modern MVC framework. MVC stands for Model-View-Controller. Model handles database and external data connections. Controllers handle routing and dynamic data logic. And views for the template of the page that should be delivered to the user.
 
+## How to access the website
+The website is located at (subject to change): <http://enigmatic-thicket-1799.herokuapp.com>. If you would like to access the protected areas of the site, add **/superkey** to the end of the URL.
+
 ## Integrations
 Travis CI: [![Build Status](https://magnum.travis-ci.com/ARMmaster17/otternonsense-official.svg?token=VrDCJ6yNxgW55ph7puWA&branch=master)](https://magnum.travis-ci.com/ARMmaster17/otternonsense-official) 
 
