@@ -66,7 +66,7 @@
     <div class="row">
       <div class="col-sm-12">
         <hr />
-        <?php include 'lib_version.php'; ?>
+        <?php include 'lib-version.php'; ?>
         <p>Copyright 2015 Otter Nonsense Interactive - CI build: <?php echo getVersion(); ?></p>
       </div>
     </div>
