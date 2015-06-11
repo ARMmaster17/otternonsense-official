@@ -15,7 +15,7 @@ addons:
   apt:
     packages:
 install:
-- gem install rails
+- bundle install
 script:
   - echo 'Testing not configured!'
   #- sed 's/null/'$TRAVIS_BUILD_NUMBER'/' version.php > lib-version.php
