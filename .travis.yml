@@ -14,11 +14,7 @@ branches:
 addons:
   apt:
     packages:
-    - nodejs
-    - git
 install:
-- npm install -g bower
-- bower install bootstrap
 - gem install rails
 script:
   - echo 'Testing not configured!'
