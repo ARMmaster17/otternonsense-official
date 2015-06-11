@@ -78,5 +78,6 @@ Becomes
     div
       p Hello world!
 
+If you need more help with slim, or want to use more advanced shortcuts, go here: <http://www.rubydoc.info/gems/slim/frames>.
 ## Questions?
 Open a new issue with the *question* tag and assign @ARMmaster17.
