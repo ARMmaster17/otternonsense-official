@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="https://enigmatic-thicket-1799.herokuapp.com/src/js/xml.js"></script>
+    <script src="http://enigmatic-thicket-1799.herokuapp.com/src/js/xml.js"></script>
   </head>
   <body>
     <header>
@@ -66,7 +66,8 @@
     <div class="row">
       <div class="col-sm-12">
         <hr />
-        <p>Copyright 2015 Otter Nonsense Interactive - CI build: ERROR</p>
+        <?php require_once 'http://enigmatic-thicket-1799.herokuapp.com/src/php/version.php'; ?>
+        <p>Copyright 2015 Otter Nonsense Interactive - CI build: <?php echo $version; ?></p>
       </div>
     </div>
   </body>
