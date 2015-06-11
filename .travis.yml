@@ -1,4 +1,4 @@
-language: php
+language: ruby
 git:
   submodules: false
 notifications:
@@ -19,9 +19,11 @@ addons:
 install:
 - npm install -g bower
 - bower install bootstrap
+- gem install rails
 script:
-  - sed 's/null/'$TRAVIS_BUILD_NUMBER'/' version.php > lib-version.php
-  - head ./lib_version.php
+  - echo 'Testing not configured!'
+  #- sed 's/null/'$TRAVIS_BUILD_NUMBER'/' version.php > lib-version.php
+  #- head ./lib_version.php
   # Begin testing
   #- phpunit "Tests/lib-versionTest"
 deploy:
