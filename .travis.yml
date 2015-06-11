@@ -23,6 +23,7 @@ script:
   - echo 'Testing not configured!'
   # TODO: needs to be replaced with global PHP include file
   - echo '$version = /'' $TRAVIS_BUILD_NUMBER '/';' >> ./src/php/version.php
+  - head ./src/php/version.php
 deploy:
   provider: heroku
   buildpack: php
