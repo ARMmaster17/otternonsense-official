@@ -22,7 +22,7 @@ install:
 script:
   - echo 'Testing not configured!'
   - sed 's/null/'$TRAVIS_BUILD_NUMBER'/' version.php > lib_version.php
-  - head ./version.php
+  - head ./lib_version.php
 deploy:
   provider: heroku
   api_key: "9951e24c-b489-48fe-8a60-b325e8d850dd"
