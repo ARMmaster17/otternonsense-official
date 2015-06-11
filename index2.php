@@ -3,11 +3,11 @@
     <title>Otter Nonsense Interactive - Official Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/src/style/default.css">
-    <script src="/src/bower/jquery/dist/jquery.min.js"></script>
-    <script src="/src/bower/bootstrap/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/src/bower/bootstrap/dist/css/bootstrap.min.css">
-    <script src="/src/js/xml.js"></script>
+    <link rel="stylesheet" href="https://enigmatic-thicket-1799.herokuapp.com/src/style/default.css">
+    <script src="https://enigmatic-thicket-1799.herokuapp.com/src/bower/jquery/dist/jquery.min.js"></script>
+    <script src="https://enigmatic-thicket-1799.herokuapp.com/src/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://enigmatic-thicket-1799.herokuapp.com/src/bower/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://enigmatic-thicket-1799.herokuapp.com/src/js/xml.js"></script>
   </head>
   <body>
     <header>
