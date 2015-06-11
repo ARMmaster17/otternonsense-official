@@ -10,8 +10,12 @@ Travis CI: [![Build Status](https://magnum.travis-ci.com/ARMmaster17/otternonsen
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-## How Continious Integration works
+## How Continious Integration works for this project
 If you would like to make a change, please do so on a seperate branch, then open a pull request when you are done. Any time someone pushes a commit or merges to the **master** branch, Travis CI is triggered. Travis CI is a continious integration service. When a commit is added, Travis will download the latest source and install dependencies, build the project, do unit testing, then deploy to Heroku if everything works out.
+
+Should the project fail, Travis will notify all emails listed under the **notify:** tag in **.travis.yml**. If you would like to be notified when a build fails or starts working again, add your email. Note that this may result in a large amount of emails if development is taking place on an unstable bit of code.
+
+Upon build success, and if the build was not triggered by a pull request (different than a merge), deployment will take place. This site is deployed to Heroku, which manages dependencies and scaling behind the scenes. If settings need to be configured, look for the **deployment:** tag in **.travis.yml**, however this should not normally be done unless a major platform or versioning migratin takes place.
 
 ## Editing files
 Depending on what you want to do, you may need to edit a different file. Remember to do your editing on a seperate branch.
