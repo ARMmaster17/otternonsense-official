@@ -66,8 +66,7 @@
     <div class="row">
       <div class="col-sm-12">
         <hr />
-        <?php require_once 'https://enigmatic-thicket-1799.herokuapp.com/src/php/version.php' ?>
-        <p>Copyright 2015 Otter Nonsense Interactive - CI build: <?php echo $version ?></p>
+        <p>Copyright 2015 Otter Nonsense Interactive - CI build: ERROR</p>
       </div>
     </div>
   </body>
