@@ -13,7 +13,7 @@
     <!--End Content-->
     <footer>
       <hr />
-        <?php require_once 'https://enigmatic-thicket-1799.herokuapp.com/src/php/version.php'; ?>
+        <?php require_once 'http://enigmatic-thicket-1799.herokuapp.com/src/php/version.php'; ?>
         <p>Copyright 2015 Otter Nonsense Interactive - CI build: <?php echo $version; ?></p>
     </footer>
   </body>
