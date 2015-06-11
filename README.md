@@ -12,8 +12,6 @@ The website is located at (subject to change): <http://enigmatic-thicket-1799.he
 ## Integrations
 Travis CI: [![Build Status](https://magnum.travis-ci.com/ARMmaster17/otternonsense-official.svg?token=VrDCJ6yNxgW55ph7puWA&branch=master)](https://magnum.travis-ci.com/ARMmaster17/otternonsense-official) 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
 ## How Continious Integration works for this project
 If you would like to make a change, please do so on a seperate branch, then open a pull request when you are done. Any time someone pushes a commit or merges to the **master** branch, Travis CI is triggered. Travis CI is a continious integration service. When a commit is added, Travis will download the latest source and install dependencies, build the project, do unit testing, then deploy to Heroku if everything works out.
 
