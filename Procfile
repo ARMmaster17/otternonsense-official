@@ -1,1 +1,1 @@
-web: home.rb
+web: ./home.rb
