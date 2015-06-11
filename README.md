@@ -5,8 +5,11 @@ For a more readable, paginated version, visit <https://github.com/ARMmaster17/ot
 ## Site overview
 The entire website is programmed in Ruby. The web stack is provided by Sinatra. Minify-ing of the HTML templates is done with the Slim gem. The structure of the site is in the modern MVC framework. MVC stands for Model-View-Controller. Model handles database and external data connections. Controllers handle routing and dynamic data logic. And views for the template of the page that should be delivered to the user.
 
+## How Continious Integration works
+If you would like to make a change, please do so on a seperate branch, then open a pull request when you are done. Any time someone pushes a commit or merges to the **master** branch, Travis CI is triggered. Travis CI is a continious integration service. When a commit is added, Travis will download the latest source and install dependencies, build the project, do unit testing, then deploy to Heroku if everything works out.
+
 ## Editing files
-Depending on what you want to do, you may need to edit a different file.
+Depending on what you want to do, you may need to edit a different file. Remember to do your editing on a seperate branch.
 
 ### Backend
 This is where logic, dynamic data, and routing configuration happens. Routing and basic logic is handled in **~/main.rb**. If you would like to add a new route, copy this code and edit accordingly:
