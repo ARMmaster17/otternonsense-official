@@ -3,7 +3,7 @@
 For a more readable, paginated version, visit <https://github.com/ARMmaster17/otternonsense-official/wiki>.
 
 ## Site overview
-The entire website is programmed in Ruby. The web stack is provided by Sinatra. Minify-ing of the HTML templates is done with the Slim gem. The structure of the site is in the modern MVC framework.
+The entire website is programmed in Ruby. The web stack is provided by Sinatra. Minify-ing of the HTML templates is done with the Slim gem. The structure of the site is in the modern MVC framework. MVC stands for Model-View-Controller. Model handles database and external data connections. Controllers handle routing and dynamic data logic. And views for the template of the page that should be delivered to the user.
 
 ## Editing files
 Depending on what you want to do, you may need to edit a different file.
@@ -62,3 +62,6 @@ Becomes
 
     div
       p Hello world!
+
+## Questions?
+Open a new issue with the *question* tag and assign @ARMmaster17.
