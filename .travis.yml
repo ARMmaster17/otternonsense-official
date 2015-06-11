@@ -26,6 +26,5 @@ script:
   - head ./src/php/version.php
 deploy:
   provider: heroku
-  buildpack: php
   api_key: "9951e24c-b489-48fe-8a60-b325e8d850dd"
   app: enigmatic-thicket-1799
