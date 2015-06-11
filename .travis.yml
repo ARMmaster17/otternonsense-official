@@ -21,9 +21,8 @@ install:
 - bower install bootstrap
 script:
   - echo 'Testing not configured!'
-  # TODO: needs to be replaced with global PHP include file
-  - echo '<?php $version = '$TRAVIS_BUILD_NUMBER'; ?>' >> ./lib_version.php
-  - head ./src/php/version.php
+  - sed 's/null/'$TRAVIS_BUILD_NUMBER'/' version.php > lib_version.php
+  - head ./version.php
 deploy:
   provider: heroku
   api_key: "9951e24c-b489-48fe-8a60-b325e8d850dd"
