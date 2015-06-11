@@ -1,4 +1,6 @@
 # Otter Nonsense Interactive Official Website
+[![Build Status](https://magnum.travis-ci.com/ARMmaster17/otternonsense-official.svg?token=VrDCJ6yNxgW55ph7puWA&branch=master)](https://magnum.travis-ci.com/ARMmaster17/otternonsense-official)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 =====
 For a more readable, paginated version, visit <https://github.com/ARMmaster17/otternonsense-official/wiki>.
 
