@@ -6,16 +6,16 @@ require 'slim'
 set :port, ENV['PORT'] || 8080
 set :bind, ENV['IP'] || '0.0.0.0'
 
-@BUILD = 'Error'
+BUILD = 'Error'
 f = File.open("./builddata.txt", "r")
-@BUILD = f[0]
+BUILD = f[0]
 f.close
 
 get '/' do
-  @TRAVISBUILDNUMBER = @BUILD;
+  @TRAVISBUILDNUMBER = BUILD
   slim :index
 end
 get '/superkey' do
-  @TRAVISBUILDNUMBER = File.open(file, "r")[0]
+  @TRAVISBUILDNUMBER = BUILD
   slim :index2
 end
