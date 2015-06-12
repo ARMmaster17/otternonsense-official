@@ -14,10 +14,12 @@ set :bind, ENV['IP'] || '0.0.0.0'
 get '/' do
   #@TRAVISBUILDNUMBER = BUILD
   @TRAVISBUILDNUMBER = 'ERROR'
+  @PageTitle = 'Home'
   slim :index
 end
 get '/superkey' do
   #@TRAVISBUILDNUMBER = BUILD
   @TRAVISBUILDNUMBER = 'ERROR'
+  @PageTitle = '(DEV) Home'
   slim :index2
 end
