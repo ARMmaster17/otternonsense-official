@@ -4,8 +4,8 @@ git:
 notifications:
   email:
     recipients:
-    - wordman05@gmail.com
-    - nickpowers43@gmail.com
+      - wordman05@gmail.com
+      - nickpowers43@gmail.com
     on_success: change
     on_failure: change
 branches:
@@ -15,15 +15,15 @@ addons:
   apt:
     packages:
 install:
-- bundle install
+  - bundle install
 script:
-  - echo 'Testing not configured!'
-  #- sed 's/null/'$TRAVIS_BUILD_NUMBER'/' version.php > lib-version.php
-  #- head ./lib_version.php
+  - echo 'Configuring JIT variables...'
   - echo $TRAVIS_BUILD_NUMBER':'$TRAVIS_COMMIT > ./builddata.txt
   - head ./builddata.txt
   # Begin testing
+  - echo 'Beginning unit tests...'
   #- phpunit "Tests/lib-versionTest"
+  - echo 'Unit testing is not set up!'
 deploy:
   provider: heroku
   api_key: "9951e24c-b489-48fe-8a60-b325e8d850dd"
