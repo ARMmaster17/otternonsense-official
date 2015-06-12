@@ -7,8 +7,10 @@ set :port, ENV['PORT'] || 8080
 set :bind, ENV['IP'] || '0.0.0.0'
 
 get '/' do
+  @TRAVISBUILDNUMBER = File.open(file, "r")[0]
   slim :index
 end
 get '/superkey' do
-    slim :index2
+  @TRAVISBUILDNUMBER = File.open(file, "r")[0]
+  slim :index2
 end
