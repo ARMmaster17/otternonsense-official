@@ -21,10 +21,10 @@ def GetBuildString()
   return "#{ GetTravisBuild() } : #{ GetCommitBuild() }"
 end
 def GetTravisBuild()
-  return "SEDVARBUILDNUM"
+  return File.read('build.txt')
 end
 def GetCommitBuild()
-  return "SEDVARCOMMITNUM"
+  return File.read('commit.txt')
 end
 
 get '/' do
