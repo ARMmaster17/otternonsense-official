@@ -22,7 +22,7 @@ script:
   - ./jit.sh
   # Begin testing
   - echo 'Beginning unit tests...'
-  - rake main:default
+  - rake default
 deploy:
   provider: heroku
   api_key: "9951e24c-b489-48fe-8a60-b325e8d850dd"
