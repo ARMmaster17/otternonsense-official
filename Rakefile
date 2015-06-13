@@ -6,7 +6,7 @@ namespace :main do
   end
   
   task :vTest do
-    require 'main.rb'
+    require_relative 'main'
     AssertEqual(GetTravisBuild(), ENV['TRAVIS_BUILD_NUMBER'])
     AssertEqual(GetCommitBuild(), ENV['TRAVIS_COMMIT'])
   end
