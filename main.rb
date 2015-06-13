@@ -17,15 +17,25 @@ end
 #BUILD = f[0]
 #f.close
 
+def GetBuildString()
+  return "#{ GetTravisBuild() } : #{ GetCommitBuild() }"
+end
+def GetTravisBuild()
+  return "SEDVARBUILDNUM"
+end
+def GetCommitBuild()
+  return "SEDVARCOMMITNUM"
+end
+
 get '/' do
   #@TRAVISBUILDNUMBER = BUILD
-  @TRAVISBUILDNUMBER = 'ERROR'
+  @TRAVISBUILDNUMBER = GetBuildString()
   @PageTitle = 'Home'
   slim :index
 end
 get '/superkey' do
   #@TRAVISBUILDNUMBER = BUILD
-  @TRAVISBUILDNUMBER = 'ERROR'
+  @TRAVISBUILDNUMBER = GetBuildString()
   @PageTitle = '(DEV) Home'
   slim :index2
 end
