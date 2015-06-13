@@ -21,10 +21,10 @@ def GetBuildString()
   return "#{ GetTravisBuild() } : #{ GetCommitBuild() }"
 end
 def GetTravisBuild()
-  return File.read('build.txt')
+  return File.read('./builddata/build.txt')
 end
 def GetCommitBuild()
-  return File.read('commit.txt')
+  return File.read('./builddata/commit.txt')
 end
 
 get '/' do
