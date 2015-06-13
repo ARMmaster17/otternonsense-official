@@ -1,6 +1,5 @@
-require 'test/unit'
-
 namespace :main do
+  require 'test/unit'
   task :default => "AllTests"
   
   task :AllTests do
