@@ -8,7 +8,7 @@ namespace :main do
   
   task :vTest do
     require_relative 'main'
-    assert_equal(ENV['TRAVIS_BUILD_NUMBER'], GetTravisBuild())
-    assert_equal(ENV['TRAVIS_COMMIT'], GetCommitBuild())
+    assert ENV['TRAVIS_BUILD_NUMBER'] == GetTravisBuild()
+    assert ENV['TRAVIS_COMMIT'] == GetCommitBuild()
   end
 end
