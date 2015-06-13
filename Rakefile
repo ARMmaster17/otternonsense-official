@@ -1,6 +1,4 @@
 namespace :main do
-  task :default => "AllTests"
- 
   task :AllTests do
     Rake::Task["main:vTest"].invoke
   end
