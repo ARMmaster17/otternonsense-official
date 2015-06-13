@@ -1,28 +1,8 @@
 doctype html 
 html 
-  head 
-    title #{@PageTitle} - Otter Nonsense Interactive
-    meta charset="utf-8"
-    meta name="viewport" content="width=device-width, initial-scale=1"
-    link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
-    link rel="stylesheet" media="screen, projection" href="/styles.css"
-    script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
-    script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"
-    /[if lt IE 9] 
-      script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"
+  ==partial :PTheader
   body background-color="#0062ff"
-    nav class="navbar navbar-inverse navbar-fixed-top"
-        div class="container-fluid"
-            div class="navbar-header"
-                button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
-                    span class="icon-bar"
-                    span class="icon-bar"
-                    span class="icon-bar"
-                a class="navbar-brand" href="/" Otter Nonsense Interactive
-            div class="collapse navbar-collapse" id="myNavbar"
-              ul class="nav navbar-nav"
-                /li: a href="/" Home
-              ul class="nav navbar-nav navbar-right"
+    ==partial :PTnavbar
     div class="container"
         /[if IE]
           div class="alert alert-info"
@@ -35,7 +15,4 @@ html
             h1 Otter Nonsense Interactive
         div class="row"
             == yield
-        div class="row"
-            div class="col-sm-12"
-                hr
-                p Copyright 2015 Otter Nonsense Interactive - CI build: #{@TRAVISBUILDNUMBER}
+        ==partial :PTfooter
