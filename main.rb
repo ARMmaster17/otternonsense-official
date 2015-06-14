@@ -30,33 +30,53 @@ get '/superkey' do
   slim :index2
 end
 get '/games' do
+  @TRAVISBUILDNUMBER = 'ERROR'
+  @PageTitle = 'Games'
   slim :notready
 end
 get '/games/superkey' do
+  @TRAVISBUILDNUMBER = 'ERROR'
+  @PageTitle = '(DEV) Games'
   slim :games
 end
 get '/support' do
+  @TRAVISBUILDNUMBER = 'ERROR'
+  @PageTitle = 'Support'
   slim :notready
 end
 get '/support/superkey' do
+  @TRAVISBUILDNUMBER = 'ERROR'
+  @PageTitle = '(DEV) Support'
   slim :support
 end
 get '/community' do
+  @TRAVISBUILDNUMBER = 'ERROR'
+  @PageTitle = 'Community'
   slim :notready
 end
 get '/community/superkey' do
+  @TRAVISBUILDNUMBER = 'ERROR'
+  @PageTitle = '(DEV) Community'
   slim :community
 end
 get '/store' do
+  @TRAVISBUILDNUMBER = 'ERROR'
+  @PageTitle = 'Store'
   slim :notready
 end
 get '/store/superkey' do
+  @TRAVISBUILDNUMBER = 'ERROR'
+  @PageTitle = '(DEV) Store'
   slim :store
 end
 get '/media' do
+  @TRAVISBUILDNUMBER = 'ERROR'
+  @PageTitle = 'Media'
   slim :notready
 end
 get '/media/superkey' do
+  @TRAVISBUILDNUMBER = 'ERROR'
+  @PageTitle = 'Media'
   slim :media
 end
 #not_found do
