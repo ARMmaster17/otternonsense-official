@@ -59,6 +59,6 @@ end
 get '/media/superkey' do
   slim :media
 end
-not_found do
-  slim :404
-end
+#not_found do
+#  slim :404
+#end
