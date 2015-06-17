@@ -7,7 +7,7 @@ notifications:
       - https://webhooks.gitter.im/e/247b654f9115ce88324e
     on_success: always
     on_failure: always
-    on_start: never
+    on_start: false
   email:
     recipients:
       - wordman05@gmail.com
