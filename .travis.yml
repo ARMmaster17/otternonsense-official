@@ -28,3 +28,4 @@ deploy:
   provider: heroku
   api_key: "9951e24c-b489-48fe-8a60-b325e8d850dd"
   app: enigmatic-thicket-1799
+  skip_cleanup: true
